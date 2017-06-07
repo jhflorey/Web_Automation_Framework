@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+</head>
+<body>
+<div id='wrapper'>
+<div class='panel panel-default'>
+<div class='panel-heading'>
+Thank you for submitting this form! You have submitted this form {{request.session.counter}} times now.
+</div>
+</div>
+<h2>Submitted Information</h2>
+
+<!-- <li class='list-group-item active'>Your Info:</li> -->
+{% for info in request.session.data.items %}
+<li class='list-group-item'>{{ info.0}}: {{info.1}}</li>
+
+{% endfor %}
+<ul class='list-group'>
+</ul>
+</div>
+</body>
+</html>

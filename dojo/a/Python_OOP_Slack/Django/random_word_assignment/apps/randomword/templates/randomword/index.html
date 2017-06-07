@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Word Generator</title>
+</head>
+<body>
+<div id = 'wrapper'>
+<h1>Random Word</h1>
+<h3>(attempt # {{request.session.counter}})</h3>
+<div id="randomworldholder">
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">{{random_word}}</div>
+</div>
+<form action = "/randomword" method="POST">
+{% csrf_token %}
+<input type ="submit" name ="submit" value ="Generate" class="btn btn-default navbar-btn">
+</form>
+<form action='/reset' method='POST'>
+{% csrf_token %}
+<input type='submit' name='submit' value='reset' class='btn btn-default navbar-btn'>
+</form>
+</div>
+</body>
+</html>

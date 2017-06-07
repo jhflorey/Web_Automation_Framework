@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+</head>
+<body>
+<div id='wrapper'>
+<div class='panel panel-default'>
+<div class='panel-heading'>
+<h2>Dojo Survey</h2>
+</div>
+</div>
+<form action = "/surveyform" method="POST">
+{% csrf_token %}
+<p>
+<label for='name'>Your Name:</label>
+<input type='text' name='name' id='name'>
+</p>
+<p>
+<label for='dojolocation'>Dojo Location:</label>
+<select name='dojolocation'>
+<option value='Seatle'>Seatle</option>
+<option value='San Jose'>San Jose</option>
+<option value='Chicago'>Chicago</option>
+<option value='DC'>DC</option>
+</select>
+</p>
+<p>
+<label for='favoritelanguage'>Favorite Language:</label>
+<select name='favoritelanguage'>
+<option name='Python'>Python</option>
+<option name='Javascript'>Javascript</option>
+<option namw='Django'>Django</option>
+</select>
+</p>
+<p>
+<label for='comment'>Comment (optional):</label>
+</p>
+<p>
+<textarea name='comment' rows=8 cols='95'></textarea>
+</p>
+<input type ="submit" name ="Submit" class="btn btn-default">
+</form>
+</div>
+</body>
+</html>

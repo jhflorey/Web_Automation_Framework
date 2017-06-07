@@ -1,0 +1,291 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fmodern\fcharset0 Courier-Bold;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red85\green85\blue85;\red246\green246\blue246;\red0\green0\blue0;
+\red236\green236\blue236;\red67\green67\blue67;\red14\green115\blue192;\red252\green252\blue252;}
+{\*\expandedcolortbl;;\cssrgb\c40784\c40784\c40784;\cssrgb\c97255\c97255\c97255;\cssrgb\c0\c0\c0;
+\cssrgb\c94118\c94118\c94118;\cssrgb\c33333\c33333\c33333;\cssrgb\c0\c53333\c80000;\cssrgb\c99216\c99216\c99216;}
+{\info
+{\keywords cursorLocation=13051, fitsPagesWidth=1}}\margl1008\margr1008\margt1008\vieww15820\viewh16420\viewkind1\viewscale124
+\deftab720
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 1)
+\b0  What is Amazon EC2 service?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  EC2 uses Xen virtualization. Each virtual machine, called an \'93instance\'94. You can use Amazon EC2 to launch as many or as couple of virtual servers as you need, design security and networking, and manage storage. Amazon EC2 empowers you to scale up or down to handle changes in requirements.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 2)
+\b0  What is Amazon Machine Image (AMI)?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  An Amazon Machine Image (AMI) is a template that contains a software configuration (for example, an operating system, an application server, and applications). From an AMI, we launch an instance, which is a copy of the AMI running as a virtual server in the cloud. We can launch multiple instances of an AMI.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 3)
+\b0  What is the relation between Instance and AMI?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  We can launch different types of instances from a single AMI. An instance type essentially determines the hardware of the host computer used for your instance. Each instance type offers different compute and memory capabilities.\
+ \
+After we launch an instance, it looks like a traditional host, and we can interact with it as we would any computer. We have complete control of our instances; we can use sudo to run commands that require root privileges.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 4)
+\b0  What are the Security Best Practices for Amazon EC2?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  There are several best practices for secure Amazon EC2. Following are few of them.\
+\pard\pardeftab720\sl324\partightenfactor0
+\cf4  Use AWS Identity and Access Management (IAM) to control access to your AWS resources.\
+ Restrict access by only allowing trusted hosts or networks to access ports on your instance.\
+ Review the rules in your security groups regularly, and ensure that you apply the principle of least\
+ Privilege \'97 only open up permissions that you require.\
+ Disable password-based logins for instances launched from your AMI. Passwords can be found or cracked, and are a security risk.\
+\pard\pardeftab720\sl324\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 5)
+\b0  Explain Stopping, Starting, and Terminating an Amazon EC2 instance?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0 \
+
+\f1\b Stopping and Starting an instance:
+\f2\b0  When an instance is stopped, the instance performs a normal shutdown and then transitions to a stopped state. All of its Amazon EBS volumes remain attached, and you can start the instance again at a later time. You are not charged for additional instance hours while the instance is in a stopped state.\
+\
+
+\f1\b Terminating an instance:
+\f2\b0  When an instance is terminated, the instance performs a normal shutdown, then the attached Amazon EBS volumes are deleted unless the volume\'92s deleteOnTermination attribute is set to false. The instance itself is also deleted, and you can\'92t start the instance again at a later time.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 6)
+\b0  How to use Amazon SQS?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  Amazon SQS is a message passing mechanism that is used for communication between different connectors that are connected with each other. It also acts as a communicator between various components of Amazon. It keeps all the different functional components together. This functionality helps different components to be loosely coupled, and provide an architecture that is more failure resilient system.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 7)
+\b0  How buffer is used in Amazon web services?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  Buffer is used to make the system more resilient to burst of traffic or load by synchronizing different component. The components always receive and process the requests in unbalanced way. Buffer keeps the balance between different components and makes them work at the same speed to provide faster services.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 8)
+\b0  How does cloud computing provides on-demand functionality?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  Cloud computing is a metaphor used for internet. It provides on-demand access to virtualized IT resources that can be shared by others or subscribed by you. It provides an easy way to provide configurable resources by taking it from a shared pool. The pool consists of networks, servers, storage, applications and services.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 9)
+\b0  What is the difference between scalability and elasticity?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  Scalability is a characteristic of cloud computing through which increasing workload can be handled by increasing in proportion the amount of resource capacity. It allows the architecture to provide on demand resources if the requirement is being raised by the traffic. Whereas, elasticity is being one of the characteristic provide the concept of commissioning and decommissioning of large amount of resource capacity dynamically. It is measured by the speed by which the resources are coming on demand and the usage of the resources.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 10)
+\b0  What are the different layers of cloud computing?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  Cloud computing consists of 3 layers in the hierarchy and these are as follows: \
+
+\f1\b 1.
+\f2\b0  Infrastructure as a Service (IaaS) provides cloud infrastructure in terms of hardware like memory, processor speed etc.\'a0\
+
+\f1\b 2.
+\f2\b0  Platform as a Service (PaaS) provides cloud application platform for the developers.\'a0\
+
+\f1\b 3.
+\f2\b0  Software as a Service (SaaS) provides cloud applications which are used by the user directly without installing anything on the system. The application remains on the cloud and it can be saved and edited in there only.\
+\pard\pardeftab720\sl320\sa400\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \strokec2 11)
+\b0  How to secure your data for transport in cloud?\
+\pard\pardeftab720\sl324\partightenfactor0
+
+\f1\b\fs21\fsmilli10800 \cf4 \cb5 \strokec4 Ans:
+\f2\b0  Cloud computing provides very good and easy to use feature to an organization, but at the same time it brings lots of question that how secure is the data, which has to be transported from one place to another in cloud. So, to make sure it remains secure when it moves from point A to point B in cloud, check that there is no data leak with the encryption key implemented with the data you sending.\
+\
+\
+\
+\pard\pardeftab720\sl528\sa300\partightenfactor0
+
+\f0\fs44 \cf6 \cb1 \strokec6 Cloud Computing Questions and Answers \'96 Amazon Web Services\
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+
+\fs30\fsmilli15400 \cf6 This set of Interview Questions & Answers focuses on \'93AWS \'96 Amazon Web Services\'94.\
+1. Which of the following should be used considering factors shown in the figure ?\
+\pard\pardeftab720\sl462\qj\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://www.sanfoundry.com/?attachment_id=97467"}}{\fldrslt \cf7 \strokec7 {{\NeXTGraphic AWS-Solution-22-300x183.png \width6000 \height3660
+}¬}\
+}}\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 \uc0\u8232 a) SimpleDB\u8232 
+\b b) RDS
+\b0 \uc0\u8232 c) Amazon EC2\u8232 d) All of the mentioned\u8232 View Answer 
+\fs28 \cb8 Explanation:Use RDS when you have an existing MySQL database that could be ported and you want to minimize the amount of infrastructure and administrative management required.
+\fs30\fsmilli15400 \cb1 \
+\
+2. Point out the wrong statement:\uc0\u8232 a) Amazon Machine Instances are sized at various levels and rented on a computing/hour basis\u8232 b) The metrics obtained by CloudWatch may be used to enable a feature called Auto Scaling\u8232 c) A Number of tools are used to support EC2 services\u8232 
+\b d) None of the mentioned\uc0\u8232 
+\b0 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Explanation:Through hardware virtualization on Xen hypervisors, Amazon.com has made it possible to create private virtual servers that you can run worldwide.
+\fs30\fsmilli15400 \cb1 \
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 \
+3. Which of the following is an edge-storage or content-delivery system that caches data in different physical locations ?\uc0\u8232 a) Amazon Relational Database Service\u8232 b) Amazon SimpleDB\u8232 
+\b c) Amazon Cloudfront\uc0\u8232 
+\b0 d) Amazon Associates Web Services\uc0\u8232 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Explanation:Cloudfront is similar to systems such as Akamai.com, but is proprietary to Amazon.com and is set up to work with Amazon Simple Storage\
+System (Amazon S3).\
+
+\fs30\fsmilli15400 \cb1 \
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 4. Which of the following allows you to create instances of the MySQL database to support your Web sites ?\uc0\u8232 a) Amazon Elastic Compute Cloud\u8232 b) Amazon Simple Queue Service\u8232 
+\b c) Amazon Relational Database Servic
+\b0 e\uc0\u8232 d) Amazon Simple Storage System\u8232 View Answer: 
+\fs28 \cb8 RDS provides features such as automated software patching, database backups, and automated database scaling via an API call.
+\fs30\fsmilli15400 \cb1 \
+\
+5. Point out the correct statement:\uc0\u8232 a) Amazon Elastic Cloud is a system for creating virtual disks(volume)\u8232 b) SimpleDB interoperates with both Amazon EC2 and Amazon S3\u8232 c) EC3 is an Analytics as a Service provider\u8232 d) None of the mentioned\u8232 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Answer:b\
+Explanation:Amazon SimpleDB stores data in \'93buckets\'94 and without requiring the creation of a database schema.
+\fs30\fsmilli15400 \cb1 \
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 \
+6. Which of the following is a structured data store that supports indexing and data queries to both EC2 and S3 ?\uc0\u8232 a) CloudWatch\u8232 b) Amazon SimpleDB\u8232 c) Amazon Cloudfront\u8232 d) All of the mentioned\u8232 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Answer:b\
+Explanation:SimpleDB isn\'92t a full database implementation.
+\fs30\fsmilli15400 \cb1 \
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 \
+7. Which of the following is the machinery for interacting with Amazon\'92s vast product data and eCommerce catalog function ?\uc0\u8232 a) Amazon Elastic Compute Cloud\u8232 b) Amazon Associates Web Services\u8232 c) Alexa Web Information Service\u8232 d) All of the mentioned\u8232 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Answer:b\
+Explanation:This service, which was called Amazon E-Commerce Service (ECS), is the means for vendors to add their products to the Amazon.com site\
+and take orders and payments.
+\fs30\fsmilli15400 \cb1 \
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 \
+8. Which of the following is a billing and account management service ?\uc0\u8232 a) Amazon Elastic MapReduce\u8232 b) Amazon Mechanical Turk\u8232 c) Amazon DevPay\u8232 d) Multi-Factor Authentication\u8232 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Answer:c\
+Explanation:DevPay provides a developer API that eliminates the need for application developers to build order pipelines.
+\fs30\fsmilli15400 \cb1 \
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 \
+9. Which of the following is a means for accessing human researchers or consultants to help solve problems on a contractual or temporary basis ?\uc0\u8232 a) Amazon Elastic MapReduce\u8232 b) Amazon Mechanical Turk\u8232 c) Amazon DevPay\u8232 d) Multi-Factor Authentication\u8232 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Answer:b\
+Explanation:Problems solved by this human workforce have included object identification, video or audio recording, data duplication, and data research.
+\fs30\fsmilli15400 \cb1 \
+\pard\pardeftab720\sl462\sa200\qj\partightenfactor0
+\cf6 \
+10. Which of the following is built on top of a Hadoop framework using the Elastic Compute Cloud ?\uc0\u8232 a) Amazon Elastic MapReduce\u8232 b) Amazon Mechanical Turk\u8232 c) Amazon DevPay\u8232 d) Multi-Factor Authentication\u8232 View Answer\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb8 Answer:a\
+Explanation:Amazon Elastic MapReduce is an interactive data analysis tool for performing indexing.\
+\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 1. Which of the following correctly describes components roughly in their order of importance from top to down ?\cb1 \uc0\u8232 \cb8 a){\field{\*\fldinst{HYPERLINK "http://www.sanfoundry.com/?attachment_id=97454"}}{\fldrslt \
+\pard\pardeftab720\sl420\qj\partightenfactor0
+\cf7 \cb1 \strokec7 {{\NeXTGraphic AW-components-21-a-300x222.png \width6000 \height4440
+}¬}\
+}}\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \cb1 \uc0\u8232 \cb8 b){\field{\*\fldinst{HYPERLINK "http://www.sanfoundry.com/?attachment_id=97455"}}{\fldrslt \
+\pard\pardeftab720\sl420\qj\partightenfactor0
+\cf7 \cb1 \strokec7 {{\NeXTGraphic AW-components-21-b-300x220.png \width6000 \height4400
+}¬}\
+}}\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \cb1 \uc0\u8232 \cb8 c){\field{\*\fldinst{HYPERLINK "http://www.sanfoundry.com/?attachment_id=97456"}}{\fldrslt \
+\pard\pardeftab720\sl420\qj\partightenfactor0
+\cf7 \cb1 \strokec7 {{\NeXTGraphic AW-components-21-c-300x219.png \width6000 \height4380
+}¬}\
+}}\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \cb1 \uc0\u8232 \cb8 d) None of the mentioned\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:a\cb1 \
+\cb8 Explanation:Amazon Elastic Compute Cloud is the central application in the AWS portfolio.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 2. Point out the wrong statement:\cb1 \uc0\u8232 \cb8 a) Virtual private servers can provision virtual private clouds connected through virtual private networks\cb1 \uc0\u8232 \cb8 b) Amazon Web Services is based on SOA standards\cb1 \uc0\u8232 \cb8 c) Starting in 2012, Amazon.com made its Web service platform available to developers on a usage-basis model\cb1 \uc0\u8232 \cb8 d) All of the mentioned\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:c\cb1 \
+\cb8 Explanation:Through hardware virtualization on Xen hypervisors, Amazon.com has made it possible to create private virtual servers that you can run worldwide.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+3. Which of the following is the central application in the AWS portfolio ?\cb1 \uc0\u8232 \cb8 a) Amazon Elastic Compute Cloud\cb1 \uc0\u8232 \cb8 b) Amazon Simple Queue Service\cb1 \uc0\u8232 \cb8 c) Amazon Simple Notification Service\cb1 \uc0\u8232 \cb8 d) Amazon Simple Storage System\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:a\cb1 \
+\cb8 Explanation:Amazon Elastic Compute Cloud enables the creation, use, and management of virtual private servers running the Linux or Windows operating system over a Xen hypervisor.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+4. Which of the following is a message queue or transaction system for distributed Internet-based applications ?\cb1 \uc0\u8232 \cb8 a) Amazon Elastic Compute Cloud\cb1 \uc0\u8232 \cb8 b) Amazon Simple Queue Service\cb1 \uc0\u8232 \cb8 c) Amazon Simple Notification Service\cb1 \uc0\u8232 \cb8 d) Amazon Simple Storage System\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:b\cb1 \
+\cb8 Explanation:In a loosely coupled SOA system, a transaction manager is required to ensure that messages are not lost when a component isn\'92t available.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+5. Point out the correct statement:\cb1 \uc0\u8232 \cb8 a) SQL Server is having enormous impact in cloud computing\cb1 \uc0\u8232 \cb8 b) Amazon.com\'92s services represent the largest pure Infrastructure as a Service (IAAS)\cb1 \uc0\u8232 \cb8 c) EC2 is a Platform as a Service (PaaS) market\cb1 \uc0\u8232 \cb8 d) None of the mentioned\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:b\cb1 \
+\cb8 Explanation:EC2 is estimated to run on over 40,000+ servers worldwide divided into six availability zones.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+6. Which of the following is a system for creating block level storage devices that can be used for Amazon Machine Instances in EC2 ?\cb1 \uc0\u8232 \cb8 a) CloudWatch\cb1 \uc0\u8232 \cb8 b) Amazon Elastic Block Store\cb1 \uc0\u8232 \cb8 c) AWS Import/Export\cb1 \uc0\u8232 \cb8 d) All of the mentioned\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:b\cb1 \
+\cb8 Explanation:The Load Balancing feature can detect when an instance is failing and reroute traffic to a healthy instance, even an instance in other AWS zones.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+7. Which of the following feature is used for scaling of EC2 sites ?\cb1 \uc0\u8232 \cb8 a) Auto Replica\cb1 \uc0\u8232 \cb8 b) Auto Scaling\cb1 \uc0\u8232 \cb8 c) Auto Ruling\cb1 \uc0\u8232 \cb8 d) All of the mentioned\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:b\cb1 \
+\cb8 Explanation:Autoscaling is part of Amazon Cloudwatch and available at no additional charge.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+8. Which of the following is a Web service that can publish messages from an application and deliver them to other applications or to subscribers ?\cb1 \uc0\u8232 \cb8 a) Amazon Elastic Compute Cloud\cb1 \uc0\u8232 \cb8 b) Amazon Simple Queue Service\cb1 \uc0\u8232 \cb8 c) Amazon Simple Notification Service\cb1 \uc0\u8232 \cb8 d) Amazon Simple Storage System\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:c\cb1 \
+\cb8 Explanation:SNS provides a method for triggering actions, allowing clients or applications to subscribe to information (like RSS), or polling for new or changed information or perform updates.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+9. Which of the following metrics are used to support Elastic Load Balancing ?\cb1 \uc0\u8232 \cb8 a) CloudWatch\cb1 \uc0\u8232 \cb8 b) Amazon Elastic Block Store\cb1 \uc0\u8232 \cb8 c) AWS Import/Export\cb1 \uc0\u8232 \cb8 d) All of the mentioned\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:a\cb1 \
+\cb8 Explanation:Amazon Machine Instances (AMIs) in EC2 can be load balanced using the Elastic Load Balancing.\
+\pard\pardeftab720\sl420\sa200\qj\partightenfactor0
+\cf6 \
+10. Which of the following is an online backup and storage system ?\cb1 \uc0\u8232 \cb8 a) Amazon Elastic Compute Cloud\cb1 \uc0\u8232 \cb8 b) Amazon Simple Queue Service\cb1 \uc0\u8232 \cb8 c) Amazon Simple Notification Service\cb1 \uc0\u8232 \cb8 d) Amazon Simple Storage System\cb1 \uc0\u8232 \cb8 View Answer\
+\pard\pardeftab720\sl320\qj\partightenfactor0
+\cf6 Answer:d\cb1 \
+\cb8 Explanation:A high speed data transfer feature called AWS Import/Export can transfer data to and from AWS using Amazon\'92s own internal network to portable storage devices.\
+}
